@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import numpy as np
 from binlets import binlets
 from scipy import stats
