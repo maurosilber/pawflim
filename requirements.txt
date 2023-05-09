@@ -1,0 +1,3 @@
+binlets
+numpy
+scipy
