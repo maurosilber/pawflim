@@ -1,0 +1,48 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  pawFLIM: reducing bias and uncertainty to enable lower photon count in FLIM experiments
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Mauro
+    family-names: Silberberg
+    email: maurosilber@df.uba.ar
+    orcid: 'https://orcid.org/0000-0002-2402-1100'
+    affiliation: >-
+      Department of Physics, FCEN, University of
+      Buenos Aires and IFIBA, CONICET, Buenos Aires.
+      C1428EHA, Argentina
+  - given-names: Hernán Edgardo
+    family-names: Grecco
+    email: hgrecco@df.uba.ar
+    affiliation: >-
+      Department of Physics, FCEN, University of
+      Buenos Aires and IFIBA, CONICET, Buenos Aires.
+      C1428EHA, Argentina; and, Department of
+      Systemic Cell Biology, Max Planck Institute of
+      Molecular Physiology, Dortmund, 44227, Germany
+    orcid: 'https://orcid.org/0000-0002-1165-4320'
+identifiers:
+  - type: doi
+    value: 10.1088/2050-6120/aa72ab
+abstract: >-
+  Förster resonant energy transfer measured by fluorescence lifetime imaging microscopy (FRET-FLIM)
+  is the method of choice for monitoring the spatio-temporal dynamics of protein interactions in living cells.
+  To obtain an accurate estimate of the molecular fraction of interacting proteins requires a large number of photons,
+  which usually precludes the observation of a fast process,
+  particularly with time correlated single photon counting (TCSPC) based FLIM.
+  In this work, we propose a novel method named pawFLIM (phasor analysis via wavelets)
+  that allows the denoising of FLIM datasets
+  by adaptively and selectively adjusting the desired compromise between spatial and molecular resolution.
+  The method operates by applying a weighted translational-invariant Haar-wavelet transform denoising algorithm to phasor images.
+  This results in significantly less bias and mean square error than other existing methods.
+  We also present a new lifetime estimator (named normal lifetime)
+  with a smaller mean squared error and overall bias
+  as compared to frequency domain phase and modulation lifetimes.
+  Overall, we present an approach that will enable the observation of the dynamics of biological processes at the molecular level with better temporal and spatial resolution.
+license: MIT
