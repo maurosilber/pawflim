@@ -25,5 +25,5 @@ phasor = denoised[1] / denoised[0]
 ```
 
 See the notebook in
-[examples](https://github.com/maurosilber/binlets-paper/blob/main/examples/simulated_data.ipynb)
+[examples](https://github.com/maurosilber/pawflim/blob/main/examples/simulated_data.ipynb)
 for an example with simulated data.
