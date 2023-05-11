@@ -5,7 +5,7 @@ import hypothesis.extra.numpy as st_np
 import hypothesis.strategies as st
 import numpy as np
 
-from .pawflim import _inverse
+from .. import _inverse
 
 
 def invertible(x: np.ndarray) -> bool:
