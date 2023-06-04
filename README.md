@@ -1,5 +1,10 @@
 # pawFLIM: denoising via adaptive binning for FLIM datasets
 
+![PyPi](https://img.shields.io/pypi/pyversions/pawflim.svg)
+[![PyPi](https://img.shields.io/pypi/v/pawflim.svg)](https://pypi.python.org/pypi/pawflim)
+[![License](https://img.shields.io/github/license/maurosilber/smo)](https://opensource.org/licenses/MIT)
+[![Paper](https://img.shields.io/badge/DOI-10.1088%2F2050--6120%2Faa72ab-green)](https://doi.org/10.1088/2050-6120/aa72ab)
+
 ## Installation
 
 pawFLIM can be installed from PyPI:
