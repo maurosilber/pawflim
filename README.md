@@ -21,13 +21,23 @@ from pawflim import pawflim
 
 data = np.empty((3, *shape), dtype=complex)
 data[0] = ... # number of photons
-data[1] = ... # n-th fourier coefficient
-data[2] = ... # 2n-th fourier coefficient
+data[1] = ... # n-th (conjugated) Fourier coefficient
+data[2] = ... # 2n-th (conjugated) Fourier coefficient
 
 denoised = pawflim(data, n_sigmas=2)
 
 phasor = denoised[1] / denoised[0]
 ```
+
+Note that we use the standard FLIM definition for the $n$-th phasor $r$:
+
+$$ r_n = \frac{R_n}{R_0} $$
+
+where
+
+$$ R_n = \int I(t) \, e^{i n \omega t} dt $$
+
+is the $n$-th (conjugated) Fourier coefficient.
 
 See the notebook in
 [examples](https://github.com/maurosilber/pawflim/blob/main/examples/simulated_data.ipynb)
