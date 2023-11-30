@@ -60,7 +60,7 @@ def phasor_covariance(R0, R1, R2, *, mask=None):
 
 def _inverse(x):
     """Calculates the inverse for a 2x2 matrix.
-    
+
     Much faster than np.linalg.inv.
     """
     y = np.empty_like(x)
@@ -68,7 +68,8 @@ def _inverse(x):
     y[..., 1, 1] = x[..., 0, 0]
     y[..., 0, 1] = -x[..., 0, 1]
     y[..., 1, 0] = -x[..., 1, 0]
-    y /= np.linalg.det(x)[..., None, None]
+    det = np.linalg.det(x)[..., None, None]
+    y = np.divide(y, det, where=det != 0, out=y)
     return y
 
 
