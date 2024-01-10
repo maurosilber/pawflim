@@ -13,6 +13,12 @@ pawFLIM can be installed from PyPI:
 pip install pawflim
 ```
 
+or conda-forge:
+
+```
+conda install -c conda-forge pawflim
+```
+
 ## Usage
 
 ```python
